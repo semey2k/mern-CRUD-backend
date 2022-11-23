@@ -166,7 +166,7 @@ export const block = async (req, res) => {
         _id: userId,
       },
       {$set: {
-        status: "заблокирован",
+        status: "Заблокирован",
       }
       },
     );
@@ -189,7 +189,7 @@ export const unblock = async (req, res) => {
         _id: userId,
       },
       { $set: {
-        status: "открыт",
+        status: "Открыт",
       }
       },
     );
